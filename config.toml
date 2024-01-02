@@ -7,7 +7,7 @@
   Port                  = 3306
   User                  = root
   Password              =
-  Name                  = test
+  Name                  = 
   MaxIdleConnection     = 10
 	MaxOpenConnection     = 100
 	MaxLifetimeConnection = 60
