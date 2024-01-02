@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "6c3c73c6-0c39-4eee-8071-b6d5f9e217ec",
+		"name": "Sensors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5627877"
+	},
+	"item": [
+		{
+			"name": "Generate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/generate",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSensors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_1\": \"W\",\n    \"id_2\": 14\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/get",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateSensor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_1\": \"Z\",\n    \"id_2\": 20,\n    \"type\": \"sensor\",\n    \"value\": 11.5,\n    \"timestamp\": \"2024-05-05\",\n    \"filter_id1\": \"W\",\n    \"filter_id2\": 14\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/update",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSensor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_1\": \"P\",\n    \"id_2\": 50\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
